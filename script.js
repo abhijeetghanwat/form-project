@@ -8,7 +8,7 @@ document.getElementById('userForm').addEventListener('submit', async function (e
         feedback: document.getElementById('feedback').value
     };
 
-    const response = await fetch('http://localhost:5000/api/submit', {
+    const response = await fetch('https://dfa5-2600-6c5a-467f-875e-9632-a308-4c16-3cc9.ngrok-free.app/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
